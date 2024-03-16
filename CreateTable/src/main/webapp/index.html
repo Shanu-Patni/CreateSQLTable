@@ -1,0 +1,140 @@
+<html><head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+input[type="text"]{
+padding:5px 15px;
+background-color:white; 
+
+outline:none; 
+color:black;
+}
+select{
+background-color: transparent;
+
+color:black;
+outline:none;
+}
+option{
+color:black;
+}
+</style>
+</head>
+<body style="display:flex; justify-content:center; background-color:white; color:black;">
+<form action="createTable">
+<h1 align="center">Create SQL Table</h1>
+<label for="tname" style="display:flex; flex-direction:column;">
+Table Name
+<input type="text" id="tname" name="tableName" style="width:150px;">
+</label>
+
+<br>
+<table border="1" cellpadding="10px" style="border-collapse:collapse;margin-top:10px">
+<thead>
+	<tr>
+		<th>Column Name</th>	
+		<th>Data Type</th>
+		<th>Length</th>
+		<th>Default</th>
+		<th>PK</th>
+		<th>Not Null</th>
+	</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td><input type="text" name="ColumnName"></td>
+	<td>
+		<select name="Options">
+			<option></option>
+			<option name="Options" value="int">int</option>
+			<option name="Options" value="double">double</option>
+			<option name="Options" value="char">char</option>
+			<option name="Options" value="varchar">varchar</option>
+			<option name="Options" value="boolean">Boolean</option>
+		</select>
+	</td>
+	<td><input type="text" name="Length"></td>
+	<td><input type="text" name="Default"></td>
+	<td><input type="radio" name="pk" value="0"></td>
+	<td><input type="checkbox" name="notNull" value="0"></td>
+</tr>
+<tr>
+	<td><input type="text" name="ColumnName"></td>
+	<td>
+		<select name="Options">
+			<option></option>
+			<option name="Options" value="int">int</option>
+			<option name="Options" value="double">double</option>
+			<option name="Options" value="char">char</option>
+			<option name="Options" value="varchar">varchar</option>
+			<option name="Options" value="boolean">Boolean</option>
+		</select>
+	</td>
+	<td><input type="text" name="Length"></td>
+	<td><input type="text" name="Default"></td>
+	<td><input type="radio" name="pk" value="1"></td>
+	<td><input type="checkbox" name="notNull" value="1"></td>
+</tr>
+<tr>
+	<td><input type="text" name="ColumnName"></td>
+	<td>
+		<select name="Options">
+			<option></option>
+			<option name="Options" value="int">int</option>
+			<option name="Options" value="double">double</option>
+			<option name="Options" value="char">char</option>
+			<option name="Options" value="varchar">varchar</option>
+			<option name="Options" value="boolean">Boolean</option>
+		</select>
+	</td>
+	<td><input type="text" name="Length"></td>
+	<td><input type="text" name="Default"></td>
+	<td><input type="radio" name="pk" value="2"></td>
+	<td><input type="checkbox" name="notNull" value="2"></td>
+</tr>
+<tr>
+	<td><input type="text" name="ColumnName"></td>
+	<td>
+		<select name="Options">
+			<option></option>
+			<option name="Options" value="int">int</option>
+			<option name="Options" value="double">double</option>
+			<option name="Options" value="char">char</option>
+			<option name="Options" value="varchar">varchar</option>
+			<option name="Options" value="boolean">Boolean</option>
+		</select>
+	</td>
+	<td><input type="text" name="Length"></td>
+	<td><input type="text" name="Default"></td>
+	<td><input type="radio" name="pk" value="3"></td>
+	<td><input type="checkbox" name="notNull" value="3"></td>
+</tr>
+<tr>
+	<td><input type="text" name="ColumnName"></td>
+	<td>
+		<select name="Options">
+			<option></option>
+			<option name="Options" value="int">int</option>
+			<option name="Options" value="double">double</option>
+			<option name="Options" value="char">char</option>
+			<option name="Options" value="varchar">varchar</option>
+			<option name="Options" value="boolean">Boolean</option>
+		</select>
+	</td>
+	<td><input type="text" name="Length"></td>
+	<td><input type="text" name="Default"></td>
+	<td><input type="radio" name="pk" value="4"></td>
+	<td><input type="checkbox" name="notNull" value="4"></td>
+</tr>
+
+</tbody>
+</table>
+<br>
+<div style="display:flex; justify-content:space-between;">
+<input type="submit" value="Create Table" style="padding:5px; margin-right:10px; font-weight:600;">
+<input type="reset" value="Revert" style="padding:5px; font-weight:600;">
+</div>
+</form>
+
+</body></html>
